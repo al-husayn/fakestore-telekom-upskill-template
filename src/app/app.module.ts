@@ -11,6 +11,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ProductsComponent } from './components/products/products.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
