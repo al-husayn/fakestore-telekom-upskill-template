@@ -9,7 +9,7 @@ import { ProductlistService } from 'src/app/services/productlist.service';
 })
 export class ProductsComponent implements OnInit {
   public productsList: any;
-
+  public searchText='';
   public constructor(
     private products: ProductlistService,
     private cartService: CartService
@@ -22,6 +22,9 @@ export class ProductsComponent implements OnInit {
         Object.assign(item, { quantity: 1, total: item.price });
       });
       console.log(this.productsList);
+    });
+    this.cartService.search.subscribe((val: string) => {
+      this.searchText = val;
     });
   }
   public addtocart(item: any) {
