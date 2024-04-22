@@ -1,20 +1,13 @@
-
-.item img {
-    width: 64px;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-
-.item {
-    margin: 0px 15px;
-    text-align: center;
-}
-
-.item a:hover {
-    color: blue;
-}
-
 .card {
     padding: 20px;
-    margin: 5px;
+    margin: 10px; 
+    box-sizing: border-box; 
 }
 
 .card img {
