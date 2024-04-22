@@ -1,4 +1,4 @@
-<ng-container>
+<ng-container *ngIf="products.length > 0">
     <div class="container">
         <div class="card-table">
             <div class="cart-product">
@@ -43,7 +43,7 @@
 </ng-container>
 
 
-<ng-container *ngIf="false">
+<ng-container *ngIf="products.length == 0">
     <div class="container">
         <div class="card">
             <h5 class="card-title">My Cart</h5>
