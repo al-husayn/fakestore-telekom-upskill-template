@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
   title = 'fakestore';
 }
