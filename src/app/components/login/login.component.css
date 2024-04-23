@@ -22,6 +22,7 @@
 
 .login-container form div {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .login-container form button {
