@@ -1,1 +1,25 @@
-<p>product-detail works!</p>
+<div class="page-container">
+<div *ngIf="product" class="product-detail-container">
+ <h2  class="card-title"
+            style="
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 100ch;
+            ">{{ product.title }}</h2>
+ <img [src]="product.image" alt="{{ product.title }}">
+ <p style="
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 100ch;
+            ">{{ product.description }}</p>
+ <p>Price: {{ product.price }}</p>
+ <p>Rating: {{ product.rating.rate }} ({{ product.rating.count }} reviews)</p>
+ <button (click)="addtocart(product)">Add to Cart</button>
+</div>
+<div *ngIf="!product">
+ <p>Loading product details...</p>
+</div>
+
+</div>
